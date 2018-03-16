@@ -103,6 +103,8 @@ class EggEvent(BaseEvent):
             'sponsored':
                 self.sponsor_id > 0
                 if Unknown.is_not(self.sponsor_id) else Unknown.REGULAR,
+            'sponsored_or_empty':
+                locale.get_sponsored_text() if self.sponsor_id > 0 else '',
             'park': self.park,
             'team_id': self.current_team_id,
             'team_name': locale.get_team_name(self.current_team_id),

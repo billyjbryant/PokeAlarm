@@ -26,7 +26,8 @@
     "003": "Spark"
   }, 
   "misc": {
-    "boosted": "potenziato"
+    "boosted": "potenziato",
+	"sponsored": "sponsorizzati"
   }, 
   "moves": {
     "013": "Avvolgibotta", 

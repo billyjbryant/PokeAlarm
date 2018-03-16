@@ -128,3 +128,6 @@ class Locale(object):
 
     def get_boosted_text(self):
         return self.__misc.get('boosted', '')
+
+    def get_sponsored_text(self):
+        return self.__misc.get('sponsored', '')

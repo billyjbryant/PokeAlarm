@@ -70,7 +70,8 @@
     "003": "Spark"
   }, 
   "misc": {
-    "boosted": "boosted"
+    "boosted": "boosted",
+	"sponsored": "Sponsored"
   }, 
   "moves": {
     "013": "Wrap", 
