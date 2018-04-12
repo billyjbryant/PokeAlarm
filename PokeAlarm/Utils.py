@@ -377,6 +377,12 @@ def get_applemaps_link(lat, lng):
            + 'daddr={}&z=10&t=s&dirflg=w'.format(latlon)
 
 
+# Returns a String link to Teleport to a location in PokeGo++2.0
+def get_pokego2_link(lat, lng, name, type):
+    deeplink = '{},{},{}'.format(repr(lat), repr(lng), str(name))
+    return 'https://pokego2.com/p.html?{}'.format(deeplink)
+
+
 # Returns a static map url with <lat> and <lng> parameters for dynamic test
 def get_static_map_url(settings, api_key=None):  # TODO: optimize formatting
     if not parse_boolean(settings.get('enabled', 'True')):
